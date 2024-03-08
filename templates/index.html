@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App | Python - Flask</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='dist/css/output.css')}}">
 </head>
 <body>
     <h1>TODOS</h1>
+
+
+    
     <ul>
         {% for todo in todos %}
         <li>
@@ -22,5 +26,6 @@
         <input type="text" name="todo">
         <button type="submit">Add todo</button>
     </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 </html>
