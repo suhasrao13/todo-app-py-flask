@@ -14,7 +14,7 @@ def add():
     todos.append({"task":todo,"done":False})
     return redirect(url_for("index"))
 
-@app.route("/edit/<int:index>",methods=["GET","POST"])
+@app.route("/edit/<int:index>",methods=["POST"])
 def edit(index):
     todo=todos[index]
     if request.method=="POST":
